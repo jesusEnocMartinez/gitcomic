@@ -1,0 +1,33 @@
+<button class="btn btn-success float-right m-3" 
+    (click)="onGuardarSepultura()">Registrar Sepultura</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Numero Sepultura</th>
+        <th scope="col">Campo Santo</th>
+        <th scope="col">Fecha Difuncion</th>
+        <th scope="col">UltimoDfiunto</th>
+        <th scope="col">Capacidad</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="sepulturas.length">
+      <tr *ngFor="let sepultura of sepulturas">
+        <td>{{sepultura.id}}</td>
+        <td>{{sepultura.numeroSepultura}}</td>
+        <td>{{sepultura.campoSanto}}</td>
+        <td>{{sepultura.fechaDifuncion}}</td>
+        <td>{{sepultura.ultimoDifunto}}</td>
+        <td>{{sepultura.capacidad}}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="!sepulturas.length">
+      <tr>
+        <td colspan="6">
+          <div class="alert alert-warning text-center" role="alert">
+            No se encontraron resultados
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

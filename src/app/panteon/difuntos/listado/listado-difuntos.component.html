@@ -1,0 +1,33 @@
+<button class="btn btn-success float-right m-3" 
+    (click)="onGuardarDifunto()">Registrar Difunto</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre del Difunto</th>
+        <th scope="col">fecha de Enterramiento</th>
+        <th scope="col">Numero de Ficha</th>
+        <th scope="col">Numero de Hilera</th>
+        <th scope="col">Edad Fallecimiento</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="difuntos.length">
+      <tr *ngFor="let difunto of difuntos">
+        <td>{{difunto.id}}</td>
+        <td>{{difunto.nombreDifunto}}</td>
+        <td>{{difunto.fechaDeEnterramiento}}</td>
+        <td>{{difunto.numeroFicha}}</td>
+        <td>{{difunto.numeroHilera}}</td>
+        <td>{{difunto.edadFallecimiento}}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="!difuntos.length">
+      <tr>
+        <td colspan="6">
+          <div class="alert alert-warning text-center" role="alert">
+            No se encontraron resultados
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

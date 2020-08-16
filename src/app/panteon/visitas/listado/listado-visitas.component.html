@@ -1,0 +1,29 @@
+<button class="btn btn-success float-right m-3" 
+    (click)="onGuardarVisita()">Registrar Visita</button>
+<table class="table">
+    <thead>
+      <tr>
+        <th scope="col">Id</th>
+        <th scope="col">Nombre</th>
+        <th scope="col">Domicilio</th>
+        <th scope="col">Correo</th>
+      </tr>
+    </thead>
+    <tbody *ngIf="visitas.length">
+      <tr *ngFor="let visita of visitas">
+        <td>{{visita.id}}</td>
+        <td>{{visita.nombre}}</td>
+        <td>{{visita.domicilio}}</td>
+        <td>{{visita.correo}}</td>
+      </tr>
+    </tbody>
+    <tbody *ngIf="!visitas.length">
+      <tr>
+        <td colspan="4">
+          <div class="alert alert-warning text-center" role="alert">
+            No se encontraron resultados
+          </div>
+        </td>
+      </tr>
+    </tbody>
+  </table>

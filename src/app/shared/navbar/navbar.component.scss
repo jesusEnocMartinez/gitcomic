@@ -1,0 +1,28 @@
+ul {
+    list-style: none;
+  }
+  li {
+    margin: 0.5rem;
+  }
+  a {
+    margin: 0 1rem;
+    color: #000;
+    text-decoration: none;
+  }
+  .checkbox:checked ~ .menu {
+    background: #fff;
+    top: 0rem;
+  }
+  .checkbox:checked + header .header-container label .header-button {
+    background: none;
+  }
+  .checkbox:checked + header .header-container label .header-button::before {
+    transform: rotate(35deg);
+    top: 0;
+  }
+  .checkbox:checked + header .header-container label .header-button::after {
+    transform: rotate(-35deg);
+    top: 0;
+  }
+
+  

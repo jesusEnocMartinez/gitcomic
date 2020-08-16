@@ -1,0 +1,131 @@
+<div class="container">
+  <div class="card">
+    <div class="card.header">
+      <h3>Difunto</h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="difuntoForm">
+        <div class="form-group">
+          <label for="">DNI de Difuntos</label>
+          <input
+            formControlName="dniDifunto"
+            name="dniDifunto"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Nombre de Difunto</label>
+          <input
+            formControlName="nombreDifunto"
+            name="nombreDifunto"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Fecha De Enterramiento</label>
+          <input
+            formControlName="fechaDeEnterramiento"
+            name="fechaEnterramiento"
+            type="date"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Edad de Fallecimiento</label>
+          <input
+            formControlName="edadFallecimiento"
+            name="edadFallecimiento"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Parentesco Titular</label>
+          <input
+            formControlName="parentescoTitular"
+            name="parentescoTitular"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Fecha de Difunciòn</label>
+          <input
+            formControlName="fechaDifuncion"
+            name="fechaDifunto"
+            type="date"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Localidad</label>
+          <input
+            formControlName="localidad"
+            name="localidad"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Domicilio</label>
+          <input
+            formControlName="domicilio"
+            name="domicilio"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Anotaciones</label>
+          <input
+            formControlName="anotaciones"
+            name="anotaciones"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Numero de Ficha</label>
+          <input
+            formControlName="numeroFicha"
+            name="numeroFicha"
+            type="number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Numero de Hilera</label>
+          <input
+            formControlName="numeroHilera"
+            name="numeroHilera"
+            type="number"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Sujeto a Orden Judicial</label>
+          <input
+            formControlName="sujetoOrden"
+            name="sujetoOrden"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <button class="btn btn-primary" (click)="onGuardarDifunto()"> Registrar Difunto</button>
+        </div>
+      </form>
+
+    </div>
+  </div>
+</div>

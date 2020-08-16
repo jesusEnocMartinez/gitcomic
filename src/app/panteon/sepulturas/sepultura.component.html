@@ -1,0 +1,103 @@
+<div class="container">
+  <div class="card">
+    <div class="card.header">
+      <h3>Sepultura</h3>
+    </div>
+    <div class="card-body">
+      <form [formGroup]="sepulturaForm">
+        <div class="form-group">
+          <label for="">Numero de Sepultura</label>
+          <input
+            formControlName="numeroSepultura"
+            name="me"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Numero Antiguo</label>
+          <input
+            formControlName="numeroAntiguo"
+            name="hola"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Campo Santo</label>
+          <input
+            formControlName="campoSanto"
+            name="name"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Ultimo Difunto</label>
+          <input
+            formControlName="ultimoDifunto"
+            name="se"
+            type="text"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">Fecha de Difunciòn</label>
+          <input
+            formControlName="fechaDifuncion"
+            name="pu"
+            type="date"
+            class="form-control"
+          />
+        </div>
+        <div class="form-group">
+          <label for="">DNI</label>
+          <input
+            formControlName="dni"
+            name="tu"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Estado</label>
+          <input
+            formControlName="estado"
+            name="ra"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Parentesco Titular</label>
+          <input
+            formControlName="parentescoTitular"
+            name="paren"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <label for="">Capacidad</label>
+
+          <input
+            formControlName="capacidad"
+            name="capa"
+            type="text"
+            class="form-control"
+          />
+        </div>
+
+        <div class="form-group">
+          <button 
+            class="btn btn-primary"
+            (click)="onGuardarSepultura()">Guardar Sepultura</button>
+        </div>
+      </form>
+    </div>
+  </div>
+</div>
